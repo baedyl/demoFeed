@@ -23,7 +23,7 @@ defineProps({
         </div>
       </div>
       <div class="post__top-right">
-        <button class="bubble">{{ item.state }}</button>
+        <button class="bubble state">{{ item.state }}</button>
         <button class="bubble balance">{{ item.balance }}</button>
         <span class="post__date-posted">{{ item.timestamp }}</span>
         <button class="bubble next">
@@ -43,6 +43,10 @@ defineProps({
   border-radius: 3px;
   padding: 12px 18px;
   clip-path: polygon(3% 0%, 100% 0, 100% 73%, 97% 100%, 0 97%, 0 22%);
+}
+
+.post:hover {
+  background: #242424;
 }
 
 .post__top {
@@ -65,11 +69,19 @@ defineProps({
   margin-right: 10px;
 }
 
+.post__profile-img:hover {
+  box-shadow: inset 100px 0 0 10px purple;
+  filter: grayscale();
+  color: white;
+  cursor: pointer;
+}
+
 .post__profile-name {
   color: white;
   text-decoration: none;
   font-size: 16px;
   margin-bottom: 6px;
+  cursor: pointer;
 }
 
 .post__date-posted {
@@ -109,6 +121,11 @@ defineProps({
   border: 1px solid #232323;
 }
 
+.balance:hover {
+  background: white;
+  color: #797979;
+}
+
 .next {
   margin-left: 48px;
   padding: 13px;
@@ -118,5 +135,13 @@ defineProps({
   cursor: pointer;
   width: 40px;
   height: 40px;
+}
+
+.next:hover {
+  transform: translateY(0) scale(1.2);
+}
+
+.state:hover {
+  border: solid 1px white;
 }
 </style>
