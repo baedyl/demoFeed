@@ -42,6 +42,6 @@ hr {
     rgba(255, 255, 255, 0.75),
     rgba(138, 136, 136, 0)
   );
-  margin-top: 42px;
+  margin-top: 10px;
 }
 </style>

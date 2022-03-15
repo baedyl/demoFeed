@@ -21,8 +21,8 @@ import { RouterLink } from "vue-router";
           <RouterLink to="/add" active-class="active">ADD WALLET</RouterLink>
         </li>
       </ul>
+      <hr />
     </nav>
-    <hr />
   </div>
 </template>
 
@@ -34,6 +34,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .sticky-wrapper {
